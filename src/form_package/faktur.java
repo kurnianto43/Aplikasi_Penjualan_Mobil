@@ -267,6 +267,11 @@ new Timer(1000, taskPerformer).start();
         });
 
         jButton5.setText("Kembali");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
 
         jButton6.setText("Cari");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -627,6 +632,13 @@ new Timer(1000, taskPerformer).start();
     private void cari2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cari2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cari2ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+        menu_utama m=new menu_utama();
+        m.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments
